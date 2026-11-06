@@ -1,0 +1,35 @@
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.5}
+img{max-width:100%;height:auto;display:block}
+ul{list-style:none;margin:0;padding:0}
+h1,h2,h3,p{margin:0}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.mockbar{background:#111;color:#fff;font:500 13px/1.4 system-ui,sans-serif;padding:7px 20px;text-align:center}
+.mockbar a{color:#ffd95e;margin-left:8px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:#111;color:#fff;padding:10px 16px;border-radius:6px;font:500 14px system-ui,sans-serif;opacity:0;pointer-events:none;transition:.2s;z-index:50;max-width:calc(100% - 32px)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.pic img,.gallery img{width:100%;height:100%;object-fit:contain}
+img.cover{object-fit:cover!important}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;cursor:pointer;position:relative}
+.chip input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.dot{width:14px;height:14px;border-radius:50%;border:1px solid rgba(0,0,0,.25);flex:none;display:inline-block}
+.ways{display:flex;flex-wrap:wrap;gap:6px}
+.way{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.specs{border-collapse:collapse;width:100%}
+.specs caption{text-align:left;font-weight:700;padding-bottom:6px}
+.specs th{text-align:left;font-weight:600;width:42%}
+.specs th,.specs td{padding:7px 0;vertical-align:top}
+.todo{font-size:14px;padding:10px 12px;border-left:3px solid #d2a22c;background:rgba(210,162,44,.14)}
+.menu{display:none}
+.add{display:flex;gap:10px;align-items:end;flex-wrap:wrap}
+.add label{display:grid;gap:3px;font-size:14px}
+.add input{width:76px;padding:9px 8px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
